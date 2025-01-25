@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Simon Game</title>
+      <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <div class="landing-page" id="landingPage">
+        <div class="landing-content">
+          <h1>Welcome to Simon Game</h1>
+          <input type="text" id="username" placeholder="Enter your username">
+          <button id="play-button">Play</button>
+        </div>
+      </div>
+      <div class="leaderboard" id="leaderboard">
+        <h2>Leaderboard</h2>
+        <ul id="leaderboard-list"></ul>
+      </div>
+      <div class="container" id="gameContainer">
+        <div class="simon-board">
+          <div class="button green" data-color="green"></div>
+          <div class="button red" data-color="red"></div>
+          <div class="button yellow" data-color="yellow"></div>
+          <div class="button blue" data-color="blue"></div>
+        </div>
+        <div class="controls">
+          <button id="start-button">Start</button>
+          <p>Score: <span id="score">0</span></p>
+          <button id="theme-button">Dark Mode</button>
+        </div>
+      </div>
+      <div class="game-over-overlay" id="gameOverOverlay">
+        <div class="game-over-content">
+          <h2>Game Over!</h2>
+          <p>Your Score: <span id="final-score">0</span></p>
+          <button id="restart-button">Restart</button>
+          <button id="new-game-button">New Game</button>
+        </div>
+      </div>
+      <script type="module" src="script.js"></script>
+    </body>
+    </html>
